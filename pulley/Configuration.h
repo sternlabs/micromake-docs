@@ -98,11 +98,11 @@
 #define EXT0_MAX_ACCELERATION 4000
 #define EXT0_HEAT_MANAGER 1
 #define EXT0_WATCHPERIOD 1
-#define EXT0_PID_INTEGRAL_DRIVE_MAX 140
+#define EXT0_PID_INTEGRAL_DRIVE_MAX 255
 #define EXT0_PID_INTEGRAL_DRIVE_MIN 60
 #define EXT0_PID_PGAIN_OR_DEAD_TIME 22.2
-#define EXT0_PID_I 1.08
-#define EXT0_PID_D 114
+#define EXT0_PID_I 1.9
+#define EXT0_PID_D 40
 #define EXT0_PID_MAX 255
 #define EXT0_ADVANCE_K 0
 #define EXT0_ADVANCE_L 0
@@ -452,12 +452,12 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_REQUIRES_HEATING 0
 #define Z_PROBE_MIN_TEMPERATURE 150
 #define FEATURE_AUTOLEVEL 1
-#define Z_PROBE_X1 -69.28
-#define Z_PROBE_Y1 -40
-#define Z_PROBE_X2 69.28
-#define Z_PROBE_Y2 -40
+#define Z_PROBE_X1 -73.61
+#define Z_PROBE_Y1 -42.5
+#define Z_PROBE_X2 73.61
+#define Z_PROBE_Y2 -42.5
 #define Z_PROBE_X3 0
-#define Z_PROBE_Y3 80
+#define Z_PROBE_Y3 85
 #define BED_LEVELING_METHOD 0
 #define BED_CORRECTION_METHOD 0
 #define BED_LEVELING_GRID_SIZE 6
@@ -573,7 +573,7 @@ Values must be in range 1..255
             "id": 0,
             "heatManager": 1,
             "pidDriveMin": 60,
-            "pidDriveMax": 140,
+            "pidDriveMax": 255,
             "pidMax": 255,
             "sensorType": 1,
             "sensorPin": "TEMP_0_PIN",
@@ -585,8 +585,8 @@ Values must be in range 1..255
             "acceleration": 4000,
             "watchPeriod": 1,
             "pidP": 22.2,
-            "pidI": 1.08,
-            "pidD": 114,
+            "pidI": 1.9,
+            "pidD": 40,
             "advanceK": 0,
             "advanceL": 0,
             "waitRetractTemp": 150,
@@ -796,9 +796,9 @@ Values must be in range 1..255
     "bedUpdateInterval": 5000,
     "bedPidDriveMin": 80,
     "bedPidDriveMax": 255,
-    "bedPidP": 196,
-    "bedPidI": 33,
-    "bedPidD": 290,
+    "bedPidP": 321.15,
+    "bedPidI": 118.02,
+    "bedPidD": 218.46,
     "bedPidMax": 255,
     "bedDecoupleTestPeriod": 300,
     "caseLightPin": -1,
@@ -880,12 +880,12 @@ Values must be in range 1..255
     "zProbeStartScript": "",
     "zProbeFinishedScript": "",
     "featureAutolevel": "1",
-    "zProbeX1": -69.28,
-    "zProbeY1": -40,
-    "zProbeX2": 69.28,
-    "zProbeY2": -40,
+    "zProbeX1": -73.61,
+    "zProbeY1": -42.5,
+    "zProbeX2": 73.61,
+    "zProbeY2": -42.5,
     "zProbeX3": 0,
-    "zProbeY3": 80,
+    "zProbeY3": 85,
     "zProbeSwitchingDistance": 3,
     "zProbeRepetitions": 3,
     "sdSupport": "1",
